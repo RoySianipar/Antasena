@@ -39,11 +39,6 @@
 <div class="container">
     <div class="row">
         <div class="well">
-
-            <div class="clearfix" style="margin:10px;">
-                <button class="btn btn-danger" id="ResetAntasena" onclick="ResetAntasena()">Reset</button>
-
-            </div>
             <table id="table">
                 <thead>
                     <tr>
@@ -188,26 +183,5 @@
         });
 
     })
-    function ResetAntasena() {
-        $.ajax({
-            url: '@Url.Action("ResetAntasena", "Home")',
-            type: 'POST',
-            contentType: false,
-            processData: false,
-            success: function (response) {
-                swal({
-                    title: "Success!",
-                    text: "Data Sukses Direset",
-                    type: "success",
-                    showCancelButton: false,
-                    showConfirmButton: true
-                }, function () {
-                    window.location.href = '@Url.Action("UnmatchAntasena", "Home")';
-                });
-            },
-            error: function (response) {
-                swal("Oops", "We couldn't connect to the server!", "error");
-            }
-        })
-    }
+    
 </script>

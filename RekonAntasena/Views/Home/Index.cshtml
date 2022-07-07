@@ -23,6 +23,7 @@
                     <div class="col col-sm-3">
                         <button class="btn btn-primary" id="Upload" onclick="upload()">Upload</button>
                         <button class="btn btn-success" id="Rekon" onclick="Rekon()">Rekon</button>
+                        <button class="btn btn-danger" id="ResetData" onclick="ResetTable()">Reset</button>
                     </div>
                 </div>
             </div>
@@ -64,11 +65,11 @@
         var table = $('#table2').DataTable({
             "scrollX": true,
             "bFilter": false,
-            "bPaginate" : false,
+            "bPaginate": false,
             "searchPanes": {
                 "controls": false
             },
-            "bInfo" : false,
+            "bInfo": false,
             "ajax": {
                 "url": "@Url.Action("getTrans", "Home")",
                 "type": "GET",
@@ -93,11 +94,11 @@
                         //{ "data": "Jenis", "autoWidth": true },
                         { "data": "NamaFile", "autoWidth": true },
                    {
-                        "autoWidth": true,
-                        "render": function (data, type, row) {
-                                return moment(row.UploadFile).format('MMMM Do YYYY, h:mm:ss a');
-                             }
-                    }
+                       "autoWidth": true,
+                       "render": function (data, type, row) {
+                           return moment(row.UploadFile).format('MMMM Do YYYY, h:mm:ss a');
+                       }
+                   }
 
             ]
         });
@@ -171,5 +172,78 @@
         })
     }
 
+    function ResetTable() {
+        swal({
+            title: "Apakah anda yakin?",
+            text: "Semua data anda akan direset!",
+            type: "warning",
+            showCancelButton: true,
+            confirmButtonColor: '#DD6B55',
+            confirmButtonText: 'Ya, saya yakin!',
+            cancelButtonText: "Batalkan",
+            closeOnConfirm: false,
+            closeOnCancel: false
+        },
+ function (isConfirm) {
 
+     if (isConfirm) {
+         $.ajax({
+             url: '@Url.Action("ResetAntasena", "Home")',
+             type: 'POST',
+             contentType: false,
+             processData: false,
+             success: function (response) {
+                 swal({
+                     title: "Success!",
+                     text: "Data Sukses Direset",
+                     type: "success",
+                     showCancelButton: false,
+                     showConfirmButton: true
+                 }, function () {
+                     window.location.href = '@Url.Action("Index", "Home")';
+                 });
+             },
+             error: function (response) {
+                 swal("Oops", "We couldn't connect to the server!", "error");
+             }
+         })
+
+     } else {
+         swal("Dibatalkan", "Data anda tidak jadi di reset :)", "error");
+         e.preventDefault();
+     }
+ });
+   
+
+        @*swal({
+            title: "Apakah Anda Yakin?!",
+            text: "Data Anda Akan Direset",
+            type: "warning",
+            showCancelButton: true,
+            showConfirmButton: true,
+            success: function(response){
+                $.ajax({
+                    url: '@Url.Action("ResetAntasena", "Home")',
+                    type: 'POST',
+                    contentType: false,
+                    processData: false,
+                    success: function (response) {
+                        swal({
+                            title: "Success!",
+                            text: "Data Sukses Direset",
+                            type: "success",
+                            showCancelButton: false,
+                            showConfirmButton: true
+                        }, function () {
+                            window.location.href = '@Url.Action("UnmatchAntasena", "Home")';
+                        });
+                    },
+                    error: function (response) {
+                        swal("Oops", "We couldn't connect to the server!", "error");
+                    }
+                })
+        }
+        })*@
+        
+    }
 </script>

@@ -115,7 +115,7 @@ namespace RekonAntasena.Controllers
                                 workbook = workbooks.Open(path);
                                 worksheet = workbook.ActiveSheet;
                                 range = worksheet.UsedRange;
-                                for (int i = 1; i < range.Rows.Count; i++)
+                                for (int i = 1; i <= range.Rows.Count; i++)
                                 {
                                     string data = ((_excel.Range)range.Cells[i, 1]).Text;
                                     string[] words = data.Split('|');
@@ -292,14 +292,16 @@ namespace RekonAntasena.Controllers
 
         public ActionResult ResetAntasena()
         {
-            var datas = _context.DataAntasena.Where(x => x.isDelete == false);
             var result = false;
-            foreach (var item in datas)
-            {
-                item.isDelete = true;
-                _context.Entry(item).State = EntityState.Modified;
-            }
-            _context.SaveChanges();
+            var delTrans = "DELETE FROM Transaksis";
+            var delAnta = "DELETE FROM DataAntasenas";
+            var delLhbu = "DELETE FROM LHBUs";
+            _con.Open();
+            _con.Execute(delTrans);
+            _con.Execute(delAnta);
+            _con.Execute(delLhbu);
+            _con.Close();
+
             return Json(result = true, JsonRequestBehavior.AllowGet);
         }
 
@@ -348,7 +350,7 @@ namespace RekonAntasena.Controllers
             foreach (var item in getAntasena)
             {
                 var getLhbu = _con.QueryFirstOrDefault<DataLHBUVM>("SELECT * FROM LHBUs WHERE StatusId = @StatusId AND idPelapor = @idPelapor AND periodeLaporan = @periodeLaporan " +
-                                        "AND periodeData = @periodeData AND nomorRefTransaksi2 = @nomorRefTransaksi2 AND idPihakLawan = @idPihakLawan AND kontrak2 = @kontrak2 AND variabelMendasari = @variabelMendasari " +
+                                        "AND periodeData = @periodeData AND idPihakLawan = @idPihakLawan AND kontrak2 = @kontrak2 AND variabelMendasari = @variabelMendasari " +
                                         "AND peranPelapor = @peranPelapor AND tanggalEfektif = @tanggalEfektif AND tanggalAwalForward = @tanggalAwalForward AND tanggalValuta = @tanggalValuta " +
                                         "AND tanggalJatuhTempo = @tanggalJatuhTempo AND valutaDasar = @valutaDasar AND valutaLawan = @valutaLawan AND nominalValutaDasar = @nominalValutaDasar AND kursTransaksi = @kursTransaksi " +
                                         "AND strikePrice2 = @strikePrice2 AND baseRate = @baseRate AND premiSwap = @premiSwap AND premiOption = @premiOption AND styleOption = @styleOption AND periodePembayaranBunga = @periodePembayaranBunga " +
@@ -363,7 +365,7 @@ namespace RekonAntasena.Controllers
                                                         idPelapor = item.idPelapor,
                                                         periodeLaporan = item.periodeLaporan,
                                                         periodeData = item.periodeData,
-                                                        nomorRefTransaksi2 = item.nomorRefTransaksi2.ToLower(),
+                                                        //nomorRefTransaksi2 = item.nomorRefTransaksi2.ToLower(),
                                                         idPihakLawan = item.idPihakLawan,
                                                         kontrak2 = item.kontrak2.ToLower(),
                                                         variabelMendasari = item.variabelMendasari,
