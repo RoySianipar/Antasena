@@ -1,0 +1,250 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<br />
+<div class="container body-content">
+    <div class="row">
+        <div class="well">
+            <h4>Upload Data</h4>
+            <div class="form-horizontal">
+                <div class="form-group">
+                    <label class="control-label col-md-2">Browse File</label>
+                    <div class="col-md-3">
+                        <select class="form-control" id="CategoryFile">
+                            <option value="">-- Pilih Jenis Data --</option>
+                            <option value="1">File Data Antasena</option>
+                            <option value="2">File Data LHBU</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <input id="file" type="file" class="form-control">
+                    </div>
+                    <div class="col col-sm-3">
+                        <button class="btn btn-primary" id="Upload" onclick="upload()">Upload</button>
+                        <button class="btn btn-success" id="Rekon" onclick="Rekon()">Rekon</button>
+                        <button class="btn btn-danger" id="ResetData" onclick="ResetTable()">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        @*<div class="clearfix" style="margin:10px;"></div>*@
+        <h3>File Uploaded</h3>
+        <table id="table2" class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Jenis File</th>
+                    <th>Nama File</th>
+                    <th>Tanggal Upload</th>
+
+                </tr>
+            </thead>
+            <tbody class="tbody"></tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
+
+<script src="~/Scripts/jquery-3.6.0.js"></script>
+<script type="text/javascript" src="~/Scripts/jquery-3.6.0.min.js"></script>
+
+
+<script>
+    const namaFiless = document.getElementById("NamaFiles");
+    const isExist = JSON.parse(localStorage.getItem("files"));
+    if (!isExist) {
+        localStorage.setItem("files", JSON.stringify(new Array()));
+
+    }
+    $(document).ready(function () {
+        var table = $('#table2').DataTable({
+            "scrollX": true,
+            "bFilter": false,
+            "bPaginate": false,
+            "searchPanes": {
+                "controls": false
+            },
+            "bInfo": false,
+            "ajax": {
+                "url": "@Url.Action("getTrans", "Home")",
+                "type": "GET",
+                "datatype": "json"
+            },
+            "columns": [
+                   {
+                       render: (data, type, row, meta) => {
+                           return meta.row + meta.settings._iDisplayStart + 1;
+                       }
+                   },
+                   {
+                       render: (data, type, row) => {
+                           if (row.Jenis == 1) {
+                               return "Data Antasena";
+                           }
+                           else {
+                               return "Data LHBU";
+                           }
+                       }
+                   },
+                        //{ "data": "Jenis", "autoWidth": true },
+                        { "data": "NamaFile", "autoWidth": true },
+                   {
+                       "autoWidth": true,
+                       "render": function (data, type, row) {
+                           return moment(row.UploadFile).format('MMMM Do YYYY, h:mm:ss a');
+                       }
+                   }
+
+            ]
+        });
+    })
+
+
+    function upload() {
+        $("input[type='file']").prop("disabled", true);
+
+        var jenis = $("#CategoryFile").val();
+
+        var files = new FormData();
+        files.append('Id', jenis);
+
+        $.each($("input[type='file']")[0].files, function (i, file) {
+            files.append('files', file);
+        });
+        $.ajax({
+            url: '@Url.Action("UploadFiles", "Home")',
+            type: 'POST',
+            contentType: false,
+            processData: false,
+            data: files,
+            success: function (response) {
+                $("input[type='file']").prop("disabled", false);
+                $('#Upload').button('reset');
+                var namaFiles = JSON.parse(localStorage.getItem("files"));
+                namaFiles.push(document.getElementById("file").files[0].name);
+                localStorage.setItem("files", JSON.stringify(namaFiles));
+
+
+                //Files.push(files[0].name);
+                //localStorage.setItem("Files", Files);
+                swal({
+                    title: "Success!",
+                    text: "Data Sukses Disimpan",
+                    type: "success",
+                    showCancelButton: false,
+                    showConfirmButton: true
+                }, function () {
+                    window.location.href = '@Url.Action("Index", "Home")';
+                });
+            },
+            error: function (response) {
+                swal("Oops", "We couldn't connect to the server!", "error");
+            }
+        })
+    }
+
+    function Rekon() {
+        $.ajax({
+            url: '@Url.Action("Rekon", "Home")',
+            type: 'POST',
+            contentType: false,
+            processData: false,
+            success: function (response) {
+                swal({
+                    title: "Success!",
+                    text: "Data Sukses Direkon",
+                    type: "success",
+                    showCancelButton: false,
+                    showConfirmButton: true
+                }, function () {
+                    window.location.href = '@Url.Action("Index", "Home")';
+                    localStorage.clear();
+                });
+            },
+            error: function (response) {
+                swal("Oops", "We couldn't connect to the server!", "error");
+            }
+        })
+    }
+
+    function ResetTable() {
+        swal({
+            title: "Apakah anda yakin?",
+            text: "Semua data anda akan direset!",
+            type: "warning",
+            showCancelButton: true,
+            confirmButtonColor: '#DD6B55',
+            confirmButtonText: 'Ya, saya yakin!',
+            cancelButtonText: "Batalkan",
+            closeOnConfirm: false,
+            closeOnCancel: false
+        },
+ function (isConfirm) {
+
+     if (isConfirm) {
+         $.ajax({
+             url: '@Url.Action("ResetAntasena", "Home")',
+             type: 'POST',
+             contentType: false,
+             processData: false,
+             success: function (response) {
+                 swal({
+                     title: "Success!",
+                     text: "Data Sukses Direset",
+                     type: "success",
+                     showCancelButton: false,
+                     showConfirmButton: true
+                 }, function () {
+                     window.location.href = '@Url.Action("Index", "Home")';
+                 });
+             },
+             error: function (response) {
+                 swal("Oops", "We couldn't connect to the server!", "error");
+             }
+         })
+
+     } else {
+         swal("Dibatalkan", "Data anda tidak jadi di reset :)", "error");
+         e.preventDefault();
+     }
+ });
+   
+
+        @*swal({
+            title: "Apakah Anda Yakin?!",
+            text: "Data Anda Akan Direset",
+            type: "warning",
+            showCancelButton: true,
+            showConfirmButton: true,
+            success: function(response){
+                $.ajax({
+                    url: '@Url.Action("ResetAntasena", "Home")',
+                    type: 'POST',
+                    contentType: false,
+                    processData: false,
+                    success: function (response) {
+                        swal({
+                            title: "Success!",
+                            text: "Data Sukses Direset",
+                            type: "success",
+                            showCancelButton: false,
+                            showConfirmButton: true
+                        }, function () {
+                            window.location.href = '@Url.Action("UnmatchAntasena", "Home")';
+                        });
+                    },
+                    error: function (response) {
+                        swal("Oops", "We couldn't connect to the server!", "error");
+                    }
+                })
+        }
+        })*@
+        
+    }
+</script>

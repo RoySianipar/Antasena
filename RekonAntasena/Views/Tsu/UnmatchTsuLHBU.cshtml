@@ -1,0 +1,130 @@
+﻿
+@{
+    ViewBag.Title = "UnmatchTsuLHBU";
+}
+
+<head>
+    <style>
+        #table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(odd) {
+            background-color: white;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #0862C2;
+            color: white;
+        }
+    </style>
+</head>
+<h3>Hasil Unmatch Data Tsu LHBU</h3>
+<div class="container">
+    <div class="row">
+        <div class="well">
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Status</th>
+                        <th>idPelapor</th>
+                        <th>periodeLaporan</th>
+                        <th>periodeData</th>
+                        <th>nomorRefTransaksi</th>
+                        <th>underlyingTransaksi</th>
+                        <th>nominalValutaDasarPerUnderlying</th>
+                        <th>jnsDokumenUnderlying</th>
+                        <th>keteranganJnsDokumenUnderlying</th>
+                        <th>nomorDokumenUnderlying</th>
+                        <th>nominalDokumenUnderlying</th>
+                        <th>valutaDokumenUnderlying</th>
+                        <th>tanggalJatuhTempoDokumenUnderlying</th>
+                        <th>CreateDate</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="~/Scripts/jquery-1.12.4.js"></script>
+<script>
+    $(document).ready(function () {
+
+        var table = $('#table').DataTable({
+            dom: 'Bfrtip',
+            buttons: [
+                'copy', 'csv', 'excel', 'pdf', 'print'
+            ],
+            "scrollX": true,
+            "ajax": {
+                "url": "@Url.Action("GetTsuLhbuList", "Tsu")",
+            "type": "GET",
+            "datatype": "json"
+        },
+            "columns": [
+                   {
+                       render: (data, type, row, meta) => {
+                           return meta.row + meta.settings._iDisplayStart + 1;
+                       }
+                   },
+                        { "data": "Status.Name", "autoWidth": true },
+                        { "data": "idPelapor", "autoWidth": true },
+                      { "data": "periodeLaporan", "autoWidth": true },
+                      { "data": "periodeData", "autoWidth": true },
+                      { "data": "nomorRefTransaksi", "autoWidth": true },
+                      { "data": "underlyingTransaksi", "autoWidth": true },
+                      { "data": "nominalValutaDasarPerUnderlying", "autoWidth": true },
+                      { "data": "jnsDokumenUnderlying", "autoWidth": true },
+                      { "data": "keteranganJnsDokumenUnderlying", "autoWidth": true },
+                      { "data": "nomorDokumenUnderlying", "autoWidth": true },
+                      { "data": "nominalDokumenUnderlying", "autoWidth": true },
+                      { "data": "valutaDokumenUnderlying", "autoWidth": true },
+                      { "data": "tanggalJatuhTempoDokumenUnderlying", "autoWidth": true },
+                      {
+                          "autoWidth": true,
+                          "render": function (data, type, row) {
+                              return moment(row.CreateDate).format('MMMM Do YYYY, h:mm:ss a');
+                          }
+                      }
+
+            ],
+                "buttons": [
+                    {
+                        "text": '<i class="fa fa-file-excel-o"></i> Download Excel',
+                        "extend": 'excelHtml5',
+                        "className": 'btn btn-success',
+                        "autoFilter": false,
+                        "sheetName": 'Data',
+                        "filename": "Report Unmatch Tsu LHBU",
+                        "title": "Report Unmatch Tsu LHBU",
+                        "message": "Tanggal : "  ,
+                    }
+                ]
+        });
+
+    })
+
+</script>
+
+

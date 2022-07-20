@@ -1,0 +1,197 @@
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\ApplicationInsights.config
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\roslyn\csc.exe
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\roslyn\vbc.exe
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\roslyn\VBCSCompiler.exe
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\RekonAntasena.dll.config
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\RekonAntasena.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\RekonAntasena.pdb
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Antlr3.Runtime.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Dapper.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\EntityFramework.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\EntityFramework.SqlServer.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Microsoft.AI.Web.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Microsoft.ApplicationInsights.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Microsoft.Owin.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Microsoft.Owin.Security.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Newtonsoft.Json.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Owin.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\System.Web.Helpers.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\System.Web.Mvc.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\System.Web.Optimization.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\System.Web.Razor.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\System.Web.WebPages.Deployment.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\System.Web.WebPages.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\System.Web.WebPages.Razor.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\WebGrease.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Dapper.xml
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Microsoft.AI.Web.xml
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Microsoft.ApplicationInsights.xml
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\System.Web.Helpers.xml
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\System.Web.Mvc.xml
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\System.Web.Optimization.xml
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\System.Web.Razor.xml
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\System.Web.WebPages.xml
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\System.Web.WebPages.Deployment.xml
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\System.Web.WebPages.Razor.xml
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Antlr3.Runtime.pdb
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Newtonsoft.Json.xml
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\EntityFramework.xml
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\EntityFramework.SqlServer.xml
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Microsoft.Owin.xml
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Microsoft.Owin.Security.xml
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\obj\Debug\RekonAntasena.Migrations.FirstAdd.resources
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\obj\Debug\RekonAntasena.Migrations.ChangeJam.resources
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\obj\Debug\RekonAntasena.Migrations.Changestring.resources
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\obj\Debug\RekonAntasena.Migrations.Changestrings.resources
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\obj\Debug\RekonAntasena.Migrations.typodatabase.resources
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\obj\Debug\RekonAntasena.Migrations.addisu.resources
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\obj\Debug\RekonAntasena.csproj.GenerateResource.Cache
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\obj\Debug\RekonAntasena.dll
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\obj\Debug\RekonAntasena.pdb
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\obj\Debug\RekonAntasena.Migrations.tambahan.resources
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\obj\Debug\RekonAntasena.csprojResolveAssemblyReference.cache
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\obj\Debug\RekonAntasena.Migrations.tambahreset.resources
+C:\Users\1397\Documents\Visual Studio 2015\Projects\RekonAntasena\RekonAntasena\obj\Debug\RekonAntasena.Migrations.CreatedDateinDBOTransaksis.resources
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\ApplicationInsights.config
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\roslyn\csc.exe
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\roslyn\vbc.exe
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\roslyn\VBCSCompiler.exe
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\RekonAntasena.dll.config
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\RekonAntasena.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\RekonAntasena.pdb
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Antlr3.Runtime.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Dapper.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\EntityFramework.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\EntityFramework.SqlServer.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Microsoft.AI.Web.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Microsoft.ApplicationInsights.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Microsoft.Owin.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Microsoft.Owin.Security.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Newtonsoft.Json.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Owin.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\System.Web.Helpers.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\System.Web.Mvc.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\System.Web.Optimization.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\System.Web.Razor.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\System.Web.WebPages.Deployment.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\System.Web.WebPages.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\System.Web.WebPages.Razor.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\WebGrease.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Dapper.xml
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Microsoft.AI.Web.xml
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Microsoft.ApplicationInsights.xml
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\System.Web.Helpers.xml
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\System.Web.Mvc.xml
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\System.Web.Optimization.xml
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\System.Web.Razor.xml
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\System.Web.WebPages.xml
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\System.Web.WebPages.Deployment.xml
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\System.Web.WebPages.Razor.xml
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Antlr3.Runtime.pdb
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Newtonsoft.Json.xml
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\EntityFramework.xml
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\EntityFramework.SqlServer.xml
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Microsoft.Owin.xml
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Microsoft.Owin.Security.xml
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\obj\Debug\RekonAntasena.Migrations.FirstAdd.resources
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\obj\Debug\RekonAntasena.Migrations.ChangeJam.resources
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\obj\Debug\RekonAntasena.Migrations.Changestring.resources
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\obj\Debug\RekonAntasena.Migrations.Changestrings.resources
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\obj\Debug\RekonAntasena.Migrations.typodatabase.resources
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\obj\Debug\RekonAntasena.Migrations.addisu.resources
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\obj\Debug\RekonAntasena.Migrations.tambahan.resources
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\obj\Debug\RekonAntasena.Migrations.tambahreset.resources
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\obj\Debug\RekonAntasena.Migrations.CreatedDateinDBOTransaksis.resources
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\obj\Debug\RekonAntasena.Migrations.pembaruan.resources
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\obj\Debug\RekonAntasena.Migrations.addTsu.resources
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\obj\Debug\RekonAntasena.Migrations.gettrans.resources
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\obj\Debug\RekonAntasena.Migrations.ulang.resources
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\obj\Debug\RekonAntasena.Migrations.dulu.resources
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\obj\Debug\RekonAntasena.Migrations.lagi.resources
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\obj\Debug\RekonAntasena.csproj.GenerateResource.Cache
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\obj\Debug\RekonAntasena.dll
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\obj\Debug\RekonAntasena.pdb
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\obj\Debug\RekonAntasena.Migrations.again.resources
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\obj\Debug\RekonAntasena.Migrations.databaru.resources
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\obj\Debug\RekonAntasena.Migrations.databaru1.resources
+C:\Users\1397\Downloads\Antasena-lae\Antasena-lae\RekonAntasena\obj\Debug\RekonAntasena.csprojResolveAssemblyReference.cache

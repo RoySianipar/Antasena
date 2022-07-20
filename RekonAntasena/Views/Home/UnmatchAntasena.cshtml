@@ -1,0 +1,187 @@
+﻿@{
+    ViewBag.Title = "UnmatchAntasena";
+}
+<head>
+    <style>
+        #table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(odd) {
+            background-color: white;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #0862C2;
+            color: white;
+        }
+    </style>
+</head>
+<h3>Hasil Unmatch Data Tsd Antasena</h3>
+<div class="container">
+    <div class="row">
+        <div class="well">
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Status</th>
+                        <th>idPelapor</th>
+                        <th>periodeLaporan</th>
+                        <th>periodeData</th>
+                        <th>nomorRefTransaksi</th>
+                        <th>idPihakLawan</th>
+                        <th>kontrak</th>
+                        <th>variabelMendasari</th>
+                        <th>peranPelapor</th>
+                        <th>jamTransaksi</th>
+                        <th>tanggalEfektif</th>
+                        <th>tanggalAwalForward</th>
+                        <th>tanggalValuta</th>
+                        <th>tanggalJatuhTempo</th>
+                        <th>valutaDasar</th>
+                        <th>valutaLawan</th>
+                        <th>nominalValutaDasar</th>
+                        <th>kursTransaksi</th>
+                        <th>strikePrice2</th>
+                        <th>baseRate</th>
+                        <th>premiSwap</th>
+                        <th>premiOption</th>
+                        <th>styleOption</th>
+                        <th>periodePembayaranBunga</th>
+                        <th>valutaDasarJnsSukuBunga</th>
+                        <th>valutaDasarJnsSukuBungaAcuan</th>
+                        <th>valutaDasarTenorSukuBungaAcuan</th>
+                        <th>valutaDasarPremiumSukuBungaAcuan</th>
+                        <th>valutaDasarSukuBungaTetap</th>
+                        <th>valutaLawanJnsSukuBunga</th>
+                        <th>valutaLawanJnsSukuBungaAcuan</th>
+                        <th>valutaLawanTenorSukuBungaAcuan</th>
+                        <th>valutaLawanPremiumSukuBungaAcuan</th>
+                        <th>valutaLawanSukuBungaTetap</th>
+                        <th>hargaFutures</th>
+                        <th>keteranganTransaksi</th>
+                        <th>transaksiPihakAsing</th>
+                        <th>lcsNegaraMitra</th>
+                        <th>nettingNomorReferensiTransaksiTerakhir</th>
+                        <th>nettingTujuan</th>
+                        <th>nettingVolume</th>
+                        <th>dynamicHedgingNomorReferensiTransaksiTerakhir</th>
+                        <th>CreateDate</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="~/Scripts/jquery-1.12.4.js"></script>
+
+<script>
+    $(document).ready(function () {
+
+        var table = $('#table').DataTable({
+            dom: 'Bfrtip',
+            buttons: [
+                'copy', 'csv', 'excel', 'pdf', 'print'
+            ],
+            "scrollX": true,
+            "ajax": {
+                "url": "@Url.Action("GetDataAntasenaList", "Home")",
+            "type": "GET",
+            "datatype": "json"
+        },
+            "columns": [
+                   {
+                       render: (data, type, row, meta) => {
+                           return meta.row + meta.settings._iDisplayStart + 1;
+                       }
+                   },
+                        { "data": "Status.Name", "autoWidth": true },
+                        { "data": "idPelapor", "autoWidth": true },
+                      { "data": "periodeLaporan", "autoWidth": true },
+                      { "data": "periodeData", "autoWidth": true },
+                      { "data": "nomorRefTransaksi", "autoWidth": true },
+                      { "data": "idPihakLawan", "autoWidth": true },
+                      { "data": "kontrak", "autoWidth": true },
+                      { "data": "variabelMendasari", "autoWidth": true },
+                      { "data": "peranPelapor", "autoWidth": true },
+                      { "data": "jamTransaksi", "autoWidth": true },
+                      { "data": "tanggalEfektif", "autoWidth": true },
+                      { "data": "tanggalAwalForward", "autoWidth": true },
+                      { "data": "tanggalValuta", "autoWidth": true },
+                      { "data": "tanggalJatuhTempo", "autoWidth": true },
+                      { "data": "valutaDasar", "autoWidth": true },
+                      { "data": "valutaLawan", "autoWidth": true },
+                      { "data": "nominalValutaDasar", "autoWidth": true },
+                      { "data": "kursTransaksi", "autoWidth": true },
+                      { "data": "strikePrice2", "autoWidth": true },
+                      { "data": "baseRate", "autoWidth": true },
+                      { "data": "premiSwap", "autoWidth": true },
+                      { "data": "premiOption", "autoWidth": true },
+                      { "data": "styleOption", "autoWidth": true },
+                      { "data": "periodePembayaranBunga", "autoWidth": true },
+                      { "data": "valutaDasarJnsSukuBunga", "autoWidth": true },
+                      { "data": "valutaDasarJnsSukuBungaAcuan", "autoWidth": true },
+                      { "data": "valutaDasarTenorSukuBungaAcuan", "autoWidth": true },
+                      { "data": "valutaDasarPremiumSukuBungaAcuan", "autoWidth": true },
+                      { "data": "valutaDasarSukuBungaTetap", "autoWidth": true },
+                      { "data": "valutaLawanJnsSukuBunga", "autoWidth": true },
+                      { "data": "valutaLawanJnsSukuBungaAcuan", "autoWidth": true },
+                      { "data": "valutaLawanTenorSukuBungaAcuan", "autoWidth": true },
+                      { "data": "valutaLawanPremiumSukuBungaAcuan", "autoWidth": true },
+                      { "data": "valutaLawanSukuBungaTetap", "autoWidth": true },
+                      { "data": "hargaFutures", "autoWidth": true },
+                      { "data": "keteranganTransaksi", "autoWidth": true },
+                      { "data": "transaksiPihakAsing", "autoWidth": true },
+                      { "data": "lcsNegaraMitra", "autoWidth": true },
+                      { "data": "nettingNomorReferensiTransaksiTerakhir", "autoWidth": true },
+                      { "data": "nettingTujuan", "autoWidth": true },
+                      { "data": "nettingVolume", "autoWidth": true },
+                      { "data": "dynamicHedgingNomorReferensiTransaksiTerakhir", "autoWidth": true },
+                      {
+                        "autoWidth": true,
+                        "render": function (data, type, row) {
+                            return moment(row.CreateDate).format('MMMM Do YYYY, h:mm:ss a');
+                            }
+                      }
+
+            ],
+                "buttons": [
+                    {
+                        "text": '<i class="fa fa-file-excel-o"></i> Download Excel',
+                        "extend": 'excelHtml5',
+                        "className": 'btn btn-success',
+                        "autoFilter": false,
+                        "sheetName": 'Data',
+                        "filename": "Report Transaksi Batch Upload Per -"  ,
+                        "title": "Report Transaksi Batch Upload",
+                        "message": "Tanggal : "  ,
+                    }
+                ]
+        });
+
+    })
+    
+</script>

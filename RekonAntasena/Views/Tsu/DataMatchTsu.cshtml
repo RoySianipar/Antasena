@@ -1,0 +1,151 @@
+﻿
+@{
+    ViewBag.Title = "DataMatchTsu";
+}
+
+<head>
+    <style>
+        #table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(odd) {
+            background-color: white;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #0862C2;
+            color: white;
+        }
+    </style>
+</head>
+<h3>Hasil Data Match Tsu</h3>
+<div class="container">
+    <div class="row">
+        <div class="well">
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Status</th>
+                        <th>idPelapor</th>
+                        <th>periodeLaporan</th>
+                        <th>periodeData</th>
+                        <th>nomorRefTransaksi</th>
+                        <th>underlyingTransaksi</th>
+                        <th>nominalValutaDasarPerUnderlying</th>
+                        <th>jnsDokumenUnderlying</th>
+                        <th>keteranganJnsDokumenUnderlying</th>
+                        <th>nomorDokumenUnderlying</th>
+                        <th>nominalDokumenUnderlying</th>
+                        <th>valutaDokumenUnderlying</th>
+                        <th>tanggalJatuhTempoDokumenUnderlying</th>                                                
+                        <th>CreateDate</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="~/Scripts/jquery-1.12.4.js"></script>
+<script>
+    $(document).ready(function () {
+
+        var table = $('#table').DataTable({
+            dom: 'Bfrtip',
+            buttons: [
+                'copy', 'csv', 'excel', 'pdf', 'print'
+            ],
+            "scrollX": true,
+            "ajax": {
+                "url": "@Url.Action("GetTransaksiTsu", "Tsu")",
+            "type": "GET",
+            "datatype": "json"
+        },
+            "columns": [
+                   {
+                       render: (data, type, row, meta) => {
+                           return meta.row + meta.settings._iDisplayStart + 1;
+                       }
+                   },
+                        { "data": "Status.Name", "autoWidth": true },
+                        { "data": "TsuAntasena.idPelapor", "autoWidth": true },
+                      { "data": "TsuAntasena.periodeLaporan", "autoWidth": true },
+                      { "data": "TsuAntasena.periodeData", "autoWidth": true },
+                      { "data": "TsuAntasena.nomorRefTransaksi", "autoWidth": true },
+                      { "data": "TsuAntasena.underlyingTransaksi", "autoWidth": true },
+                      { "data": "TsuAntasena.nominalValutaDasarPerUnderlying", "autoWidth": true },
+                      { "data": "TsuAntasena.jnsDokumenUnderlying", "autoWidth": true },
+                      { "data": "TsuAntasena.keteranganJnsDokumenUnderlying", "autoWidth": true },
+                      { "data": "TsuAntasena.nomorDokumenUnderlying", "autoWidth": true },
+                      { "data": "TsuAntasena.nominalDokumenUnderlying", "autoWidth": true },
+                      { "data": "TsuAntasena.valutaDokumenUnderlying", "autoWidth": true },
+                      { "data": "TsuAntasena.tanggalJatuhTempoDokumenUnderlying", "autoWidth": true },
+                      {
+                        "autoWidth": true,
+                        "render": function (data, type, row) {
+                            return moment(row.CreateDate).format('MMMM Do YYYY, h:mm:ss a');
+                            }
+                      }
+
+            ],
+                "buttons": [
+                    {
+                        "text": '<i class="fa fa-file-excel-o"></i> Download Excel',
+                        "extend": 'excelHtml5',
+                        "className": 'btn btn-success',
+                        "autoFilter": false,
+                        "sheetName": 'Data',
+                        "filename": "Report Data Match Tsu",
+                        "title": "Report Data Match Tsu",
+                        "message": "Tanggal : "  ,
+                    }
+                ]
+        });
+
+    })
+
+    function ResetTable() {
+        $.ajax({
+            url: '@Url.Action("ResetTransaksi", "Tsu")',
+            type: 'POST',
+            contentType: false,
+            processData: false,
+            success: function (response) {
+                swal({
+                    title: "Success!",
+                    text: "Data Sukses Direset",
+                    type: "success",
+                    showCancelButton: false,
+                    showConfirmButton: true
+                }, function () {
+                    window.location.href = '@Url.Action("DataMatchTsu", "Tsu")';
+                });
+            },
+            error: function (response) {
+                swal("Oops", "We couldn't connect to the server!", "error");
+            }
+        })
+    }
+</script>
+
